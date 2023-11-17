@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style>
+  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+
+
+  section {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+      color: #333;
+  }
+
+  p {
+      line-height: 1.6;
+      color: #666;
+  }
+
+  button {
+      background-color: #dc3545;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+
+  button:hover {
+      background-color: #c82333;
+  }
+</style>
+
+<header>
+  <h1>Welcome to Birthdays</h1>
+</header>
+
+<section>
+  <h2>About Us</h2>
+  <p>
+      
+  </p>
+
+  <h3>What We Offer:</h3>
+  <ul>
+      <li><strong>Create Your Account:</strong> Join our vibrant community by creating your account. It's quick, easy, and opens the door to a world of storytelling.</li>
+      <li><strong>Share Your Stories:</strong> Once you're a part of Gill's Blog, unleash your creativity and share your unique perspective with the world. Create and publish your blogs effortlessly.</li>
+      <li><strong>Discover a Variety of Blogs:</strong> Dive into a diverse range of blogs on our home page. Explore the creativity, insights, and stories of fellow bloggers. Connect with others who share your interests.</li>
+      <li><strong>Manage Your Blogs:</strong> Your blogs, your rules. Easily update or delete your posts to keep your content fresh and reflective of your journey.</li>
+  </ul>
+
+  <h3>Join Us Today:</h3>
+  <p>
+      Gill's Blog is more than a platform; it's a space for authentic expression and connection. Join us today, start your blogging adventure, and become a part of our growing community.
+  </p>
+
+  <p>
+      Ready to share your story? Let Gill's Blog be the canvas for your words.
+  </p>
+
+  <a class="btn btn-dark" href="{{url_for('register')}}">Join Now</a>
+</section>
+
+    
+{% endblock content %}
+
